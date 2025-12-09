@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Employee - Employee Management System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .navbar {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .form-card {
+        background: white;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/admin/dashboard">
+          <i class="bi bi-building me-2"></i>Employee Management
+        </a>
+        <div class="ms-auto">
+          <a href="/admin/dashboard" class="btn btn-outline-light btn-sm">
+            <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="form-card">
+            <h2 class="mb-4">
+              <i class="bi bi-person-plus-fill me-2"></i>Add New Employee
+            </h2>
+
+            <% if (error) { %>
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              role="alert"
+            >
+              <i class="bi bi-exclamation-triangle-fill me-2"></i><%= error %>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+              ></button>
+            </div>
+            <% } %>
+
+            <form action="/admin/add-employee" method="POST">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="name" class="form-label">Name *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="designation" class="form-label"
+                    >Designation *</label
+                  >
+                  <select
+                    class="form-select"
+                    id="designation"
+                    name="designation"
+                    required
+                  >
+                    <option value="">Select Designation</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="HR Manager">HR Manager</option>
+                    <option value="Team Lead">Team Lead</option>
+                    <option value="QA Engineer">QA Engineer</option>
+                    <option value="DevOps Engineer">DevOps Engineer</option>
+                    <option value="Product Manager">Product Manager</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="UI/UX Designer">UI/UX Designer</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email *</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    placeholder="Default: password123"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="phone" class="form-label">Phone *</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="555-0123"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="department" class="form-label"
+                    >Department *</label
+                  >
+                  <select
+                    class="form-select"
+                    id="department"
+                    name="department"
+                    required
+                  >
+                    <option value="">Select Department</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Human Resources">Human Resources</option>
+                    <option value="Quality Assurance">Quality Assurance</option>
+                    <option value="Operations">Operations</option>
+                    <option value="Product">Product</option>
+                    <option value="Design">Design</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Sales">Sales</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="joiningDate" class="form-label"
+                    >Joining Date *</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="joiningDate"
+                    name="joiningDate"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="city" class="form-label">City *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    name="city"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="state" class="form-label">State *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="state"
+                    name="state"
+                    placeholder="CA"
+                    maxlength="2"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="isAdmin"
+                    name="isAdmin"
+                    value="true"
+                  />
+                  <label class="form-check-label" for="isAdmin">
+                    Grant Admin Privileges
+                  </label>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-primary">
+                  <i class="bi bi-save me-2"></i>Add Employee
+                </button>
+                <a href="/admin/dashboard" class="btn btn-secondary">
+                  <i class="bi bi-x-circle me-2"></i>Cancel
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

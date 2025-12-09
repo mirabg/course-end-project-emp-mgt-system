@@ -1,0 +1,434 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Updated API User",
+      "designation": "Software Engineer",
+      "email": "updated.api@company.com",
+      "password": "password123",
+      "phone": "555-2222",
+      "department": "Engineering",
+      "joiningDate": "2025-03-01",
+      "location": {
+        "city": "Updated City",
+        "state": "UC"
+      },
+      "isAdmin": false,
+      "registrationCompleted": true
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "designation": "HR Manager",
+      "email": "michael.chen@company.com",
+      "password": "admin123",
+      "phone": "555-0102",
+      "department": "Human Resources",
+      "joiningDate": "2021-01-10",
+      "location": {
+        "city": "Austin",
+        "state": "TX"
+      },
+      "isAdmin": true,
+      "registrationCompleted": true
+    },
+    {
+      "id": 3,
+      "name": "Emily Rodriguez",
+      "designation": "Team Lead",
+      "email": "emily.rodriguez@company.com",
+      "password": "admin123",
+      "phone": "555-0103",
+      "department": "Engineering",
+      "joiningDate": "2020-06-20",
+      "location": {
+        "city": "Seattle",
+        "state": "WA"
+      },
+      "isAdmin": true,
+      "registrationCompleted": true
+    },
+    {
+      "id": 4,
+      "name": "David Kim",
+      "designation": "QA Engineer",
+      "email": "david.kim@company.com",
+      "password": "password123",
+      "phone": "555-0104",
+      "department": "Quality Assurance",
+      "joiningDate": "2022-08-05",
+      "location": {
+        "city": "Boston",
+        "state": "MA"
+      },
+      "isAdmin": false,
+      "registrationCompleted": true
+    },
+    {
+      "id": 5,
+      "name": "Jessica Martinez",
+      "designation": "DevOps Engineer",
+      "email": "jessica.martinez@company.com",
+      "password": "password123",
+      "phone": "555-0105",
+      "department": "Operations",
+      "joiningDate": "2021-11-12",
+      "location": {
+        "city": "Denver",
+        "state": "CO"
+      },
+      "isAdmin": false,
+      "registrationCompleted": true
+    },
+    {
+      "id": 7,
+      "name": "Amanda Wilson",
+      "designation": "Team Lead",
+      "email": "amanda.wilson@company.com",
+      "password": "admin123",
+      "phone": "555-0107",
+      "department": "Quality Assurance",
+      "joiningDate": "2019-09-14",
+      "location": {
+        "city": "Chicago",
+        "state": "IL"
+      },
+      "isAdmin": true,
+      "registrationCompleted": true
+    },
+    {
+      "id": 8,
+      "name": "James Brown",
+      "designation": "Software Engineer",
+      "email": "james.brown@company.com",
+      "password": "password123",
+      "phone": "555-0108",
+      "department": "Engineering",
+      "joiningDate": "2022-05-22",
+      "location": {
+        "city": "Portland",
+        "state": "OR"
+      },
+      "isAdmin": false,
+      "registrationCompleted": true
+    },
+    {
+      "id": 9,
+      "name": "Greg Mirabito",
+      "designation": "Software Engineer",
+      "email": "greg_mirabito@yahoo.com",
+      "password": "admin123",
+      "phone": "555-0109",
+      "department": "Quality Assurance",
+      "joiningDate": "2023-01-08",
+      "location": {
+        "city": "Plymouth",
+        "state": "MA"
+      },
+      "isAdmin": true,
+      "registrationCompleted": true
+    },
+    {
+      "id": 10,
+      "name": "Christopher Lee",
+      "designation": "DevOps Engineer",
+      "email": "christopher.lee@company.com",
+      "password": "password123",
+      "phone": "555-0110",
+      "department": "Operations",
+      "joiningDate": "2020-12-03",
+      "location": {
+        "city": "Phoenix",
+        "state": "AZ"
+      },
+      "isAdmin": false,
+      "registrationCompleted": true
+    },
+    {
+      "id": 11,
+      "name": "Maria Garcia",
+      "designation": "HR Manager",
+      "email": "maria.garcia@company.com",
+      "password": "admin123",
+      "phone": "555-0111",
+      "department": "Human Resources",
+      "joiningDate": "2021-07-19",
+      "location": {
+        "city": "Miami",
+        "state": "FL"
+      },
+      "isAdmin": true,
+      "registrationCompleted": true
+    },
+    {
+      "id": 12,
+      "name": "Daniel Thompson",
+      "designation": "Team Lead",
+      "email": "daniel.thompson@company.com",
+      "password": "admin123",
+      "phone": "555-0112",
+      "department": "Operations",
+      "joiningDate": "2019-04-25",
+      "location": {
+        "city": "San Diego",
+        "state": "CA"
+      },
+      "isAdmin": true,
+      "registrationCompleted": true
+    },
+    {
+      "id": 13,
+      "name": "Updated Name",
+      "designation": "Software Engineer",
+      "email": "john_doe@test.com",
+      "password": "password",
+      "phone": "123-4567",
+      "department": "Engineering",
+      "joiningDate": "2025-12-09",
+      "location": {
+        "city": "Somwhere",
+        "state": "CA"
+      },
+      "isAdmin": false,
+      "registrationCompleted": false
+    },
+    {
+      "id": 14,
+      "name": "",
+      "designation": "",
+      "email": "newuser1765315297336@test.com",
+      "password": "testpass123",
+      "phone": "",
+      "department": "",
+      "joiningDate": "2025-12-09",
+      "location": {
+        "city": "",
+        "state": ""
+      },
+      "isAdmin": false,
+      "registrationCompleted": false
+    },
+    {
+      "id": 15,
+      "name": "",
+      "designation": "",
+      "email": "incomplete1765315301363@test.com",
+      "password": "testpass123",
+      "phone": "",
+      "department": "",
+      "joiningDate": "2025-12-09",
+      "location": {
+        "city": "",
+        "state": ""
+      },
+      "isAdmin": false,
+      "registrationCompleted": false
+    },
+    {
+      "id": 16,
+      "name": "API Test User",
+      "designation": "QA Engineer",
+      "email": "api.test@company.com",
+      "phone": "555-1111",
+      "department": "Quality Assurance",
+      "joiningDate": "2025-02-01",
+      "location": {
+        "city": "API City",
+        "state": "AC"
+      },
+      "isAdmin": false
+    },
+    {
+      "id": 17,
+      "name": "",
+      "designation": "",
+      "email": "newuser1765315639330@test.com",
+      "password": "testpass123",
+      "phone": "",
+      "department": "",
+      "joiningDate": "2025-12-09",
+      "location": {
+        "city": "",
+        "state": ""
+      },
+      "isAdmin": false,
+      "registrationCompleted": false
+    },
+    {
+      "id": 18,
+      "name": "",
+      "designation": "",
+      "email": "incomplete1765315647604@test.com",
+      "password": "testpass123",
+      "phone": "",
+      "department": "",
+      "joiningDate": "2025-12-09",
+      "location": {
+        "city": "",
+        "state": ""
+      },
+      "isAdmin": false,
+      "registrationCompleted": false
+    },
+    {
+      "id": 19,
+      "name": "API Test User",
+      "designation": "QA Engineer",
+      "email": "api.test@company.com",
+      "password": "password123",
+      "phone": "555-1111",
+      "department": "Quality Assurance",
+      "joiningDate": "2025-02-01",
+      "location": {
+        "city": "API City",
+        "state": "AC"
+      },
+      "isAdmin": false,
+      "registrationCompleted": true
+    },
+    {
+      "id": 20,
+      "name": "",
+      "designation": "",
+      "email": "newuser1765315899952@test.com",
+      "password": "testpass123",
+      "phone": "",
+      "department": "",
+      "joiningDate": "2025-12-09",
+      "location": {
+        "city": "",
+        "state": ""
+      },
+      "isAdmin": false,
+      "registrationCompleted": false
+    },
+    {
+      "id": 21,
+      "name": "",
+      "designation": "",
+      "email": "incomplete1765315903908@test.com",
+      "password": "testpass123",
+      "phone": "",
+      "department": "",
+      "joiningDate": "2025-12-09",
+      "location": {
+        "city": "",
+        "state": ""
+      },
+      "isAdmin": false,
+      "registrationCompleted": false
+    },
+    {
+      "id": 22,
+      "name": "John Doe",
+      "designation": "Software Engineer",
+      "email": "john.doe1765315919713@company.com",
+      "password": "password123",
+      "phone": "555-9999",
+      "department": "Engineering",
+      "joiningDate": "2025-01-01",
+      "location": {
+        "city": "San Francisco",
+        "state": "CA"
+      },
+      "isAdmin": false,
+      "registrationCompleted": true
+    },
+    {
+      "id": 23,
+      "name": "Test Delete User",
+      "designation": "Software Engineer",
+      "email": "test.delete@company.com",
+      "password": "password123",
+      "phone": "555-0000",
+      "department": "Engineering",
+      "joiningDate": "2025-01-01",
+      "location": {
+        "city": "Test City",
+        "state": "TC"
+      },
+      "isAdmin": false,
+      "registrationCompleted": true
+    },
+    {
+      "id": 24,
+      "name": "API Test User",
+      "designation": "QA Engineer",
+      "email": "api.test@company.com",
+      "password": "password123",
+      "phone": "555-1111",
+      "department": "Quality Assurance",
+      "joiningDate": "2025-02-01",
+      "location": {
+        "city": "API City",
+        "state": "AC"
+      },
+      "isAdmin": false,
+      "registrationCompleted": true
+    },
+    {
+      "id": 25,
+      "name": "",
+      "designation": "",
+      "email": "newuser1765316064861@test.com",
+      "password": "testpass123",
+      "phone": "",
+      "department": "",
+      "joiningDate": "2025-12-09",
+      "location": {
+        "city": "",
+        "state": ""
+      },
+      "isAdmin": false,
+      "registrationCompleted": false
+    },
+    {
+      "id": 26,
+      "name": "",
+      "designation": "",
+      "email": "incomplete1765316068864@test.com",
+      "password": "testpass123",
+      "phone": "",
+      "department": "",
+      "joiningDate": "2025-12-09",
+      "location": {
+        "city": "",
+        "state": ""
+      },
+      "isAdmin": false,
+      "registrationCompleted": false
+    },
+    {
+      "id": 27,
+      "name": "John Doe",
+      "designation": "Software Engineer",
+      "email": "john.doe1765316084689@company.com",
+      "password": "password123",
+      "phone": "555-9999",
+      "department": "Engineering",
+      "joiningDate": "2025-01-01",
+      "location": {
+        "city": "San Francisco",
+        "state": "CA"
+      },
+      "isAdmin": false,
+      "registrationCompleted": true
+    },
+    {
+      "id": 28,
+      "name": "API Test User",
+      "designation": "QA Engineer",
+      "email": "api.test@company.com",
+      "password": "password123",
+      "phone": "555-1111",
+      "department": "Quality Assurance",
+      "joiningDate": "2025-02-01",
+      "location": {
+        "city": "API City",
+        "state": "AC"
+      },
+      "isAdmin": false,
+      "registrationCompleted": true
+    }
+  ]
+}
